@@ -17,9 +17,11 @@ public class DefaultCountingOutRhymer {
         return total == INT;
     }
 
+
     public boolean isFull() {
         return total == 11;
     }
+
 
     protected int peekaboo() {
         if (callCheck())
