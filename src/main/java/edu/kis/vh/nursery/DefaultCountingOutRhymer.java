@@ -7,6 +7,10 @@ public class DefaultCountingOutRhymer {
     public static final int NUMBERS_FULL = NUMBERS_QUANTITY - 1;
     private int[] numbers = new int[NUMBERS_QUANTITY];
 
+    public int getTotal() {
+        return total;
+    }
+
     public int total = NUMBERS_EMPTY;
 
     public void countIn(int in) {
@@ -14,12 +18,12 @@ public class DefaultCountingOutRhymer {
             numbers[++total] = in;
     }
 
-    public boolean callCheck() {
+     boolean callCheck() {
         return total == NUMBERS_EMPTY;
     }
 
 
-    public boolean isFull() {
+     boolean isFull() {
         return total == NUMBERS_FULL;
     }
 
